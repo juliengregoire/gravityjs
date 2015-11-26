@@ -1,0 +1,323 @@
+.planet
+{
+	position: absolute;
+	background-color: blue;
+	border-radius: 100%;
+
+}
+
+body
+{
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+}
+
+#controls
+{
+	width: 100px;
+	height: 100%;
+	right: 0px;
+	top: 0px;
+	border-left: solid #ccc 3px;
+	position: fixed;
+	background-color: #333;
+}
+
+#space
+{
+	height: 4000px;
+	width: 4000px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+
+}
+
+.ui-slider
+{
+	position: relative;
+	width: 70px;
+	margin: 10px auto;
+}
+
+.ui-slider .ui-slider-handle
+{
+	height: 0.7em;
+	top:0px;
+}
+
+#planet
+{
+	background: linear-gradient(to bottom right, #555, lightblue, lightblue);
+	position: relative;
+	margin: 40px auto;
+	border-radius: 100%;
+}
+#planet:hover
+{
+	cursor: pointer;
+}
+
+#controls > p
+{
+	width: 85px;
+	margin: 0px auto -10px auto;
+	color: lightgrey;
+	font-family: arial;
+	line-height: 2em;
+	font-size: 11px;
+}
+
+#slider_direction
+{
+	margin: 15px auto 15px auto;
+	width: 65px;
+	height: 65px;
+}
+
+.jcs-panel
+{
+	margin 0 auto;
+}
+
+.jcs
+{
+	border-color: lightgrey;
+	border-width: 10px;
+}
+
+.jcs-value
+{
+	margin-left: 0px;
+	border: none;
+	font-size: 18px;
+	display: none;
+}
+
+.jcs-value > span
+{
+	margin-left: 0px;
+	border: none;
+	font-size: 18px;
+}
+.jcs-indicator
+{
+	border: 5px solid #222;
+}
+
+#custom
+{
+	width: 100px;
+	margin: 0 auto;
+}
+#color_picker_container
+{
+	width: 55px;
+	margin: 10px auto;
+}
+.ui-dragging
+{
+	border-radius: 100%;
+}
+.planet
+{
+	cursor: pointer;
+}
+
+#toolbar
+{
+	position: fixed;
+	bottom: 13px;
+	left 5px;
+	width: 100%;
+	height: 23px;
+}
+
+.button
+{
+	height: 20px;
+	width: 20px;
+	position: relative;
+	float: left;
+	cursor: pointer;
+	margin: 3px;
+	-webkit-filter: invert(100%);
+
+}
+
+
+#play_pause.pause
+{
+	background-image: url(images/play43.png);
+	background-size: contain;
+
+}
+
+#play_pause.play
+{
+	background-image: url(images/pause15.png);
+	background-size: contain;
+}
+#slider_direction
+{
+	background-image: url(images/compass114.png);
+	background-size: contain;
+	-webkit-filter: invert(100%);
+}
+
+#clear
+{
+	background-image: url(images/two123.png);
+	background-size: contain;
+}
+#remove_planet
+{
+	background-image: url(images/delete_icon.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: none;
+	float: right;
+	margin: 1px 10px 3px 0px;
+	height: 16px;
+	width: 25px;
+}
+#center_planet
+{
+	background-image: url(images/crosshair14.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: none;
+	float: right;
+	margin: 1px 0px 3px 13px;
+	height: 16px;
+	width: 25px;
+}
+
+
+.button:hover
+{
+	-webkit-filter: invert(80%);
+}
+
+.ui-rotatable-handle
+{
+	width: 100%;
+	height: 100%;
+}
+
+#space_canvas
+{
+	display: block;
+	position: relative;
+	width: 4000px ;
+	height: 4000px;
+}
+
+svg
+{
+	pointer-events: none;
+}
+
+.txt_button, .planet_info
+{
+	height: 20px;
+	width: auto;
+	float: left;
+	position: relative;
+	font-size: 12px;
+	color: white;
+	line-height: 20px;
+	font-family: arial;
+	margin: 3px;
+	cursor: pointer;
+}
+
+.txt_button:hover, .navigation:hover
+{
+	color: #ddd;
+}
+
+.planet:hover 
+{
+	-webkit-filter: brightness(130%);
+}
+
+.planet.active
+{
+	-webkit-filter: brightness(130%);
+}
+#planet_info
+{
+	right: 100px;
+	position: absolute;
+}
+
+#next_planet
+{
+	margin: 0px 10px 0px 5px;
+	font-size: 18px;
+	vertical-align: bottom;
+}
+
+#previous_planet
+{
+	font-size:18px;
+	vertical-align: bottom;
+}
+
+#instructions_container, #go_or_select
+{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	pointer-events: none;
+}
+
+#instructions, #go_content
+{
+	position: relative;
+	margin: auto;
+	width: 600px;
+	color: #eee;
+	font-family: arial;
+	pointer-events: all;
+}
+
+#go_or_select
+{
+	display: none;
+}
+
+#play_from_go
+{
+	cursor: pointer;
+	color: black;
+	background: #eee;
+	padding: 5px;
+	border-radius: 3px;
+}
+
+#play_from_go:hover
+{
+	background: #5d5;
+}
+#created_by
+{
+  padding-top: 3px;
+  font-size: 10px;
+  right: 0px;
+  bottom: 0px;
+  position: fixed;
+  color: #eee;
+}
+
+#created_by > a
+{
+	color: #eee;
+	font-family: arial;
+	background-color: #111;
+	text-decoration: none;
+	line-height:100%;
+}

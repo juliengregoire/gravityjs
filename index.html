@@ -1,0 +1,109 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Gravity simulator</title>
+<meta name="description" content="Graviation, gravity simulator">
+<meta name="keywords" content="gravitation simulator, gravity simulation">
+<meta name="author" content="Julien Grégoire">
+	<link rel="shortcut icon" href="css/images/icone.ico">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57205621-2', 'auto');
+  ga('send', 'pageview');
+
+</script>					
+  
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/spectrum.js"></script>
+<script src="css/jquery-ui-1.11.3.custom/jquery-ui.min.js"></script>
+<script src="js/jquery.ui.rotatable.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<link rel="stylesheet" href="css/jquery-ui-1.11.3.custom/jquery-ui.css"/>
+<link rel="stylesheet" href="css/jquery.ui.rotatable.css"/>
+<link rel="stylesheet" href="css/circular-slider.min.css" />
+<link rel="stylesheet" href="css/spectrum.css" />
+<link rel="stylesheet" href="css/style.css"/>
+<script src="js/iterable-nodes-list.js"></script>
+<script src="js/main.js"></script>
+<script src="js/systems-array.js"></script>
+<script src="js/planet-builder.js"></script>
+<script src="js/planets.js"></script>
+<script src="js/system.js"></script>
+<script src="js/raphael-min.js"></script>
+<script src="js/system-controller.js"></script>
+<script src="js/circular-slider.min.js"></script>
+
+
+</head>
+<body>
+	<div id="space">	
+	
+		</div>
+
+	<div id="controls">
+		<p>Mass = 1</p>
+		<div id="slider_mass" class="slider"></div>
+		<p>Speed= 0</p>
+		<div id="slider_speed" class="slider"></div>
+		<p>Direction</p>
+		<div id="slider_direction" class="slider"></div>
+		<p>Volume = 0</p>
+		<div id="slider_volume" class="slider"></div>
+		<p>Color</p>
+		<div id="color_picker_container">
+		<input type='text' id="custom" />
+		</div>
+		<div id="planet"></div>
+	</div>
+	<div id="go_or_select">
+		<div id="go_content"><span id="play_from_go">Click to start</span> or select another system: <select id="select_system_from_go">
+				<option></option>
+				<option value="1" data-path="0">Solar system</option>
+<option value="2" data-path="1">Dancing stars</option>
+<option value="3" data-path="0">Comets - zoom out for that one</option>
+<option value="5" data-path="1">3 stars system</option>
+<option value="6" data-path="0">2 stars system</option>
+<option value="7" data-path="1">2 stars systems with planets</option>
+			</select>
+		</div>
+	</div>
+
+	<div id="instructions_container">
+		<div id="instructions">
+			<h1>How does it work?</h1>
+			<p>Choose a mass, speed, direction, volume and color, and drag planets on the stage.</p>
+			<p>Use the controls at the bottom to play and pause, activate paths or view the details for each planet.</p>
+			<p>Use Ctrl+ and Ctrl- to zoom in and out.</p> 	
+			<p>See a few examples here: 
+			<select id="select_system">
+				<option></option>
+
+				<option value="1" data-path="0">Solar system</option>
+<option value="2" data-path="1">Dancing stars</option>
+<option value="3" data-path="0">Comets - zoom out for that one</option>
+<option value="5" data-path="1">3 stars system</option>
+<option value="6" data-path="0">2 stars system</option>
+<option value="7" data-path="1">2 stars systems with planets</option>
+			</select>
+			</p>
+		</div>
+	</div>
+	<div id="toolbar">
+		<div class="button pause" title="Start moving" id="play_pause"></div>
+		<div class="button " title="refresh" id="clear"></div>
+		<div class="txt_button" title="Show traces" id="paths_on_off">Activate paths</div>
+		<div class="txt_button" title="Follow mode will stay centered on selected planet" id="follow_on_off">Activate follow mode</div>
+
+		<div class="planet_info" id="planet_info"><span class="navigation" title="Select previous planet" id="previous_planet"><</span><span class="navigation" title="Select next planet" id="next_planet">></span><span id="info_span">&nbsp;</span><div class="button" title="Remove selected planet" id="remove_planet"></div><div class="button" title="Center window on planet" id="center_planet"</div>
+		</div>
+		<div id="created_by"><a href="mailto:julien.gregoire@gmail.com">created by julien gregoire</a></div>
+
+		</body>
+		</html>
+
